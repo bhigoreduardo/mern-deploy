@@ -1,0 +1,25 @@
+@server = http://localhost:4040
+@endPoint = users
+
+### POST /users/sign-up
+POST {{ server }}/{{ endPoint }}/sign-up HTTP/1.1
+content-type: application/json
+
+{
+    "name": "name fake",
+    "email": "emailfake@email.com",
+    "password": "passfake"
+}
+
+### POST /users/login
+POST {{ server }}/{{ endPoint }}/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "emailfake@email.com",
+    "password": "passfake"
+}
+
+### GET /users
+GET {{ server }}/{{ endPoint }}/list HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ3Zjk4YWM4NzdmNTAzNzk3NmQwOTMiLCJlbWFpbCI6ImVtYWlsZmFrZUBlbWFpbC5jb20iLCJpYXQiOjE2ODI0Mzg3OTd9.guBouGIuZJNJhX6ovUgP4ZM1Or0CPFuVROPhZ0djt7w
