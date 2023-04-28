@@ -115,7 +115,7 @@ table tbody tr:not(:last-child) td {
   max-width: 1344px;
 }
 
-.full-width: { width: 100vw; }
+.full-width { width: 100vw; }
 .full-height { height: 100vh; }
 .w-100 { width: 100%; }
 .h-100 { height: 100%; }
@@ -148,18 +148,12 @@ table tbody tr:not(:last-child) td {
   cursor: pointer;
 }
 
-.text {
-  color: var(--color-gray-100);
-}
+.text { color: var(--color-gray-100); }
 
 .bg-red { background-color: red; }
 
 /* FORM */
-.form .form--data {
-  max-width: 500px;
-}
+.form .form--data { max-width: 500px; }
 
 /* DASHBOARD */
-.dashboard .dashboard--header h2 {
-  color: var(--color-gray-100);
-}
+.dashboard .dashboard--header h2 { color: var(--color-gray-100); }
