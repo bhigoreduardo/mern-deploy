@@ -9,7 +9,8 @@ const Form = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   const handleSignUp = async () => {
-    const response = await fetch('http://localhost:4040/users/sign-up', {
+    // http://localhost:4040/users/sign-up
+    const response = await fetch('https://mern-deploy-hzr2.onrender.com/users/sign-up', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, password }),
@@ -22,7 +23,8 @@ const Form = () => {
     }
   }
   const handleSignIn = async () => {
-    const response = await fetch('http://localhost:4040/users/login', {
+    // http://localhost:4040/users/login
+    const response = await fetch('https://mern-deploy-hzr2.onrender.com/users/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),

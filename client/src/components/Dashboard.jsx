@@ -9,7 +9,8 @@ const Dashboard = () => {
 
   const getAllUser = async () => {
     // setToken(localStorage.getItem('token'));
-    const response = await fetch('http://localhost:4040/users/list', {
+    // http://localhost:4040/users/list
+    const response = await fetch('https://mern-deploy-hzr2.onrender.com/users/list', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
